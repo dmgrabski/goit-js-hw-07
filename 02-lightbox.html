@@ -7,20 +7,20 @@
     <title>SimpleLightbox library</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="simple-lightbox.min.css" />
-<script src="simple-lightbox.min.js"></script>
-<!-- Dodaj skrypt SimpleLightbox -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
-
-
+    <!-- Usuwamy lokalny CSS simple-lightbox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css" rel="stylesheet">
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-
+    
     <!-- Add gallery items to this list -->
-    <ul class="gallery"></ul>
-<!-- Dodaj link do stylów SimpleLightbox -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css" rel="stylesheet">
-<script src="js/02-lightbox.js" type="module"></script>
+    <ul class="gallery">
+      <!-- Items will be inserted here by JavaScript -->
+    </ul>
+    
+    <!-- SimpleLightbox script from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    <!-- Custom script for initializing the gallery -->
+    <script src="js/02-lightbox.js" type="module"></script>
   </body>
 </html>
